@@ -29,7 +29,7 @@ const Photos = () => {
     .then((res) => res.json())
     .then((data) => setPhotos(data))
     setLoading(false)
-  }, [sort, submited]);
+  }, [sort, submited, search]);
 
   useEffect(() => {
     setLoading(true);
